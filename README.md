@@ -1,6 +1,6 @@
 # RRT Variants Case Studies
 
-This repository contains case studies on different versions of the Rapidly-exploring Random Tree (RRT) algorithm, including RRT*, RRT*-SMART, and Informed-RRT*. These algorithms are widely used in the field of robotics for motion planning. </br>
+This repository contains case studies on different versions of the Rapidly-exploring Random Tree (RRT) algorithm, including RRT*, RRT*-SMART, and Informed RRT*. These algorithms are widely used in the field of robotics for motion planning. </br>
 Rapidly-exploring Random Trees (RRT) are a popular family of algorithms used for path planning in robotics and other fields. They are particularly useful for navigating complex spaces with obstacles. This repository explores three advanced variants of RRT: RRT*, RRT*-SMART, and Informed-RRT*.
 
 ## RRT*
@@ -11,12 +11,12 @@ RRT* (Rapidly-exploring Random Tree Star) is an extension of the RRT algorithm t
 
 RRT*-SMART (RRT*-Short Memory Adaptive Random Tree) is a variant of RRT* that aims to further enhance path quality and convergence speed. It introduces a "smart" sampling technique that biases the sampling around key points around obstacles (called beacons) and a short memory mechanism that helps in maintaining a balance between exploration and exploitation. This results in faster convergence to high-quality paths compared to standard RRT*.
 
-## Informed-RRT*
+## Informed RRT*
 
-Informed-RRT* is an extension of RRT* that focuses on improving the efficiency of the search process. It introduces an ellipsoidal sampling space that is informed by the first path returned by RRT*, effectively reducing the sampling space as the algorithm progresses. This allows Informed-RRT* to focus the search on the most promising regions, leading to faster convergence to the optimal path.
+Informed RRT* is an extension of RRT* that focuses on improving the efficiency of the search process. It introduces an ellipsoidal sampling space that is informed by the first path returned by RRT*, effectively reducing the sampling space as the algorithm progresses. This allows Informed RRT* to focus the search on the most promising regions, leading to faster convergence to the optimal path.
 
 ## Usage
-Notebooks containing the code for RRT, RRT*, RRT*-SMART, and Informed-RRT* are included in the repository. </br>
+Notebooks containing the code for RRT, RRT*, RRT*-SMART, and Informed RRT* are included in the repository. </br>
 Open the Jupyter notebooks to explore the different RRT algorithms:
    - `RRT.ipynb`
    - `RRTstar.ipynb`
@@ -27,92 +27,38 @@ To compare these algorithms, an `Algorithm_Testbench.ipynb` notebook has been in
 
 ## RRT* vs RRT*-SMART vs Informed RRT*
 
-Random maps were generated and the following images are the results of the RRT*, RRT*-SMART, and Informed-RRT* algorithms:
+Random maps were generated and the following images are the results of the RRT*, RRT*-SMART, and Informed RRT* algorithms:
 
 ### Map 1
 
-<div style="display: flex; justify-content: space-around;">
-    <div>
-        <img src="images/RRT_star1.png" alt="RRT* Map 1" width="300"/>
-        <p>RRT*</p>
-    </div>
-    <div>
-        <img src="images/RRT_star-SMART1.png" alt="RRT*-SMART Map 1" width="300"/>
-        <p>RRT*-SMART</p>
-    </div>
-    <div>
-        <img src="images/Informed-RRT_star1.png" alt="Informed RRT* Map 1" width="300"/>
-        <p>Informed RRT*</p>
-    </div>
-</div>
+| RRT* | RRT*-SMART | Informed RRT* |
+|:---:|:---:|:---:|
+| ![RRT* Map 1](images/RRT_star1.png) | ![RRT*-SMART Map 1](images/RRT_star-SMART1.png) | ![Informed RRT* Map 1](images/Informed-RRT_star1.png) |
 
 ### Map 2
 
-<div style="display: flex; justify-content: space-around;">
-    <div>
-        <img src="images/RRT_star2.png" alt="RRT* Map 2" width="300"/>
-        <p>RRT*</p>
-    </div>
-    <div>
-        <img src="images/RRT_star-SMART2.png" alt="RRT*-SMART Map 2" width="300"/>
-        <p>RRT*-SMART</p>
-    </div>
-    <div>
-        <img src="images/Informed-RRT_star2.png" alt="Informed RRT* Map 2" width="300"/>
-        <p>Informed RRT*</p>
-    </div>
-</div>
+| RRT* | RRT*-SMART | Informed RRT* |
+|:---:|:---:|:---:|
+| ![RRT* Map 2](images/RRT_star2.png) | ![RRT*-SMART Map 2](images/RRT_star-SMART2.png) | ![Informed RRT* Map 2](images/Informed-RRT_star2.png) |
 
 ### Map 3
 
-<div style="display: flex; justify-content: space-around;">
-    <div>
-        <img src="images/RRT_star3.png" alt="RRT* Map 3" width="300"/>
-        <p>RRT*</p>
-    </div>
-    <div>
-        <img src="images/RRT_star-SMART3.png" alt="RRT*-SMART Map 3" width="300"/>
-        <p>RRT*-SMART</p>
-    </div>
-    <div>
-        <img src="images/Informed-RRT_star3.png" alt="Informed RRT* Map 3" width="300"/>
-        <p>Informed RRT*</p>
-    </div>
-</div>
+| RRT* | RRT*-SMART | Informed RRT* |
+|:---:|:---:|:---:|
+| ![RRT* Map 3](images/RRT_star3.png) | ![RRT*-SMART Map 3](images/RRT_star-SMART3.png) | ![Informed RRT* Map 3](images/Informed-RRT_star3.png) |
 
 ### Map 4
 
-<div style="display: flex; justify-content: space-around;">
-    <div>
-        <img src="images/RRT_star4.png" alt="RRT* Map 4" width="300"/>
-        <p>RRT*</p>
-    </div>
-    <div>
-        <img src="images/RRT_star-SMART4.png" alt="RRT*-SMART Map 4" width="300"/>
-        <p>RRT*-SMART</p>
-    </div>
-    <div>
-        <img src="images/Informed-RRT_star4.png" alt="Informed RRT* Map 4" width="300"/>
-        <p>Informed RRT*</p>
-    </div>
-</div>
+| RRT* | RRT*-SMART | Informed RRT* |
+|:---:|:---:|:---:|
+| ![RRT* Map 4](images/RRT_star4.png) | ![RRT*-SMART Map 4](images/RRT_star-SMART4.png) | ![Informed RRT* Map 4](images/Informed-RRT_star4.png) |
 
 ### Map 5
 
-<div style="display: flex; justify-content: space-around;">
-    <div>
-        <img src="images/RRT_star5.png" alt="RRT* Map 5" width="300"/>
-        <p>RRT*</p>
-    </div>
-    <div>
-        <img src="images/RRT_star-SMART5.png" alt="RRT*-SMART Map 5" width="300"/>
-        <p>RRT*-SMART</p>
-    </div>
-    <div>
-        <img src="images/Informed-RRT_star5.png" alt="Informed RRT* Map 5" width="300"/>
-        <p>Informed RRT*</p>
-    </div>
-</div>
+| RRT* | RRT*-SMART | Informed RRT* |
+|:---:|:---:|:---:|
+| ![RRT* Map 5](images/RRT_star5.png) | ![RRT*-SMART Map 5](images/RRT_star-SMART5.png) | ![Informed RRT* Map 5](images/Informed-RRT_star5.png) |
+
 
 
 ## Results
