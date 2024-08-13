@@ -1,4 +1,4 @@
-# RRT Variants Case Studies
+# RRT Variants Case Study
 
 This repository contains case studies on different versions of the Rapidly-exploring Random Tree (RRT) algorithm, including RRT*, RRT*-SMART, and Informed RRT*. These algorithms are widely used in the field of robotics for motion planning. </br>
 Rapidly-exploring Random Trees (RRT) are a popular family of algorithms used for path planning in robotics and other fields. They are particularly useful for navigating complex spaces with obstacles. This repository explores three advanced variants of RRT: RRT*, RRT*-SMART, and Informed-RRT*.
